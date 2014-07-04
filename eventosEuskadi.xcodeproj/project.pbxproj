@@ -1,0 +1,500 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FE5F97881966F39A005A3DE4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE5F97871966F39A005A3DE4 /* Foundation.framework */; };
+		FE5F978A1966F39A005A3DE4 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE5F97891966F39A005A3DE4 /* CoreGraphics.framework */; };
+		FE5F978C1966F39A005A3DE4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE5F978B1966F39A005A3DE4 /* UIKit.framework */; };
+		FE5F978E1966F39A005A3DE4 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE5F978D1966F39A005A3DE4 /* CoreData.framework */; };
+		FE5F97941966F39A005A3DE4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FE5F97921966F39A005A3DE4 /* InfoPlist.strings */; };
+		FE5F97961966F39A005A3DE4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FE5F97951966F39A005A3DE4 /* main.m */; };
+		FE5F979A1966F39A005A3DE4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FE5F97991966F39A005A3DE4 /* AppDelegate.m */; };
+		FE5F979D1966F39A005A3DE4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE5F979B1966F39A005A3DE4 /* Main.storyboard */; };
+		FE5F97A01966F39A005A3DE4 /* eventosEuskadi.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FE5F979E1966F39A005A3DE4 /* eventosEuskadi.xcdatamodeld */; };
+		FE5F97A31966F39A005A3DE4 /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE5F97A21966F39A005A3DE4 /* MasterViewController.m */; };
+		FE5F97A61966F39A005A3DE4 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE5F97A51966F39A005A3DE4 /* DetailViewController.m */; };
+		FE5F97A81966F39A005A3DE4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FE5F97A71966F39A005A3DE4 /* Images.xcassets */; };
+		FE5F97AF1966F39A005A3DE4 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE5F97AE1966F39A005A3DE4 /* XCTest.framework */; };
+		FE5F97B01966F39A005A3DE4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE5F97871966F39A005A3DE4 /* Foundation.framework */; };
+		FE5F97B11966F39A005A3DE4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE5F978B1966F39A005A3DE4 /* UIKit.framework */; };
+		FE5F97B21966F39A005A3DE4 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE5F978D1966F39A005A3DE4 /* CoreData.framework */; };
+		FE5F97BA1966F39A005A3DE4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FE5F97B81966F39A005A3DE4 /* InfoPlist.strings */; };
+		FE5F97BC1966F39A005A3DE4 /* eventosEuskadiTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FE5F97BB1966F39A005A3DE4 /* eventosEuskadiTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FE5F97B31966F39A005A3DE4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FE5F977C1966F39A005A3DE4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FE5F97831966F39A005A3DE4;
+			remoteInfo = eventosEuskadi;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FE5F97841966F39A005A3DE4 /* eventosEuskadi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = eventosEuskadi.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FE5F97871966F39A005A3DE4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		FE5F97891966F39A005A3DE4 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		FE5F978B1966F39A005A3DE4 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		FE5F978D1966F39A005A3DE4 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		FE5F97911966F39A005A3DE4 /* eventosEuskadi-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "eventosEuskadi-Info.plist"; sourceTree = "<group>"; };
+		FE5F97931966F39A005A3DE4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		FE5F97951966F39A005A3DE4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FE5F97971966F39A005A3DE4 /* eventosEuskadi-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "eventosEuskadi-Prefix.pch"; sourceTree = "<group>"; };
+		FE5F97981966F39A005A3DE4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		FE5F97991966F39A005A3DE4 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		FE5F979C1966F39A005A3DE4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FE5F979F1966F39A005A3DE4 /* eventosEuskadi.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = eventosEuskadi.xcdatamodel; sourceTree = "<group>"; };
+		FE5F97A11966F39A005A3DE4 /* MasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MasterViewController.h; sourceTree = "<group>"; };
+		FE5F97A21966F39A005A3DE4 /* MasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MasterViewController.m; sourceTree = "<group>"; };
+		FE5F97A41966F39A005A3DE4 /* DetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		FE5F97A51966F39A005A3DE4 /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		FE5F97A71966F39A005A3DE4 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		FE5F97AD1966F39A005A3DE4 /* eventosEuskadiTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = eventosEuskadiTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FE5F97AE1966F39A005A3DE4 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		FE5F97B71966F39A005A3DE4 /* eventosEuskadiTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "eventosEuskadiTests-Info.plist"; sourceTree = "<group>"; };
+		FE5F97B91966F39A005A3DE4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		FE5F97BB1966F39A005A3DE4 /* eventosEuskadiTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = eventosEuskadiTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FE5F97811966F39A005A3DE4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FE5F978A1966F39A005A3DE4 /* CoreGraphics.framework in Frameworks */,
+				FE5F978E1966F39A005A3DE4 /* CoreData.framework in Frameworks */,
+				FE5F978C1966F39A005A3DE4 /* UIKit.framework in Frameworks */,
+				FE5F97881966F39A005A3DE4 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FE5F97AA1966F39A005A3DE4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FE5F97AF1966F39A005A3DE4 /* XCTest.framework in Frameworks */,
+				FE5F97B21966F39A005A3DE4 /* CoreData.framework in Frameworks */,
+				FE5F97B11966F39A005A3DE4 /* UIKit.framework in Frameworks */,
+				FE5F97B01966F39A005A3DE4 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FE5F977B1966F39A005A3DE4 = {
+			isa = PBXGroup;
+			children = (
+				FE5F978F1966F39A005A3DE4 /* eventosEuskadi */,
+				FE5F97B51966F39A005A3DE4 /* eventosEuskadiTests */,
+				FE5F97861966F39A005A3DE4 /* Frameworks */,
+				FE5F97851966F39A005A3DE4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FE5F97851966F39A005A3DE4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FE5F97841966F39A005A3DE4 /* eventosEuskadi.app */,
+				FE5F97AD1966F39A005A3DE4 /* eventosEuskadiTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FE5F97861966F39A005A3DE4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FE5F97871966F39A005A3DE4 /* Foundation.framework */,
+				FE5F97891966F39A005A3DE4 /* CoreGraphics.framework */,
+				FE5F978B1966F39A005A3DE4 /* UIKit.framework */,
+				FE5F978D1966F39A005A3DE4 /* CoreData.framework */,
+				FE5F97AE1966F39A005A3DE4 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FE5F978F1966F39A005A3DE4 /* eventosEuskadi */ = {
+			isa = PBXGroup;
+			children = (
+				FE5F97981966F39A005A3DE4 /* AppDelegate.h */,
+				FE5F97991966F39A005A3DE4 /* AppDelegate.m */,
+				FE5F979B1966F39A005A3DE4 /* Main.storyboard */,
+				FE5F97A11966F39A005A3DE4 /* MasterViewController.h */,
+				FE5F97A21966F39A005A3DE4 /* MasterViewController.m */,
+				FE5F97A41966F39A005A3DE4 /* DetailViewController.h */,
+				FE5F97A51966F39A005A3DE4 /* DetailViewController.m */,
+				FE5F97A71966F39A005A3DE4 /* Images.xcassets */,
+				FE5F979E1966F39A005A3DE4 /* eventosEuskadi.xcdatamodeld */,
+				FE5F97901966F39A005A3DE4 /* Supporting Files */,
+			);
+			path = eventosEuskadi;
+			sourceTree = "<group>";
+		};
+		FE5F97901966F39A005A3DE4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FE5F97911966F39A005A3DE4 /* eventosEuskadi-Info.plist */,
+				FE5F97921966F39A005A3DE4 /* InfoPlist.strings */,
+				FE5F97951966F39A005A3DE4 /* main.m */,
+				FE5F97971966F39A005A3DE4 /* eventosEuskadi-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FE5F97B51966F39A005A3DE4 /* eventosEuskadiTests */ = {
+			isa = PBXGroup;
+			children = (
+				FE5F97BB1966F39A005A3DE4 /* eventosEuskadiTests.m */,
+				FE5F97B61966F39A005A3DE4 /* Supporting Files */,
+			);
+			path = eventosEuskadiTests;
+			sourceTree = "<group>";
+		};
+		FE5F97B61966F39A005A3DE4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FE5F97B71966F39A005A3DE4 /* eventosEuskadiTests-Info.plist */,
+				FE5F97B81966F39A005A3DE4 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FE5F97831966F39A005A3DE4 /* eventosEuskadi */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FE5F97BF1966F39A005A3DE4 /* Build configuration list for PBXNativeTarget "eventosEuskadi" */;
+			buildPhases = (
+				FE5F97801966F39A005A3DE4 /* Sources */,
+				FE5F97811966F39A005A3DE4 /* Frameworks */,
+				FE5F97821966F39A005A3DE4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = eventosEuskadi;
+			productName = eventosEuskadi;
+			productReference = FE5F97841966F39A005A3DE4 /* eventosEuskadi.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FE5F97AC1966F39A005A3DE4 /* eventosEuskadiTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FE5F97C21966F39A005A3DE4 /* Build configuration list for PBXNativeTarget "eventosEuskadiTests" */;
+			buildPhases = (
+				FE5F97A91966F39A005A3DE4 /* Sources */,
+				FE5F97AA1966F39A005A3DE4 /* Frameworks */,
+				FE5F97AB1966F39A005A3DE4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FE5F97B41966F39A005A3DE4 /* PBXTargetDependency */,
+			);
+			name = eventosEuskadiTests;
+			productName = eventosEuskadiTests;
+			productReference = FE5F97AD1966F39A005A3DE4 /* eventosEuskadiTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FE5F977C1966F39A005A3DE4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = IronHack;
+				TargetAttributes = {
+					FE5F97AC1966F39A005A3DE4 = {
+						TestTargetID = FE5F97831966F39A005A3DE4;
+					};
+				};
+			};
+			buildConfigurationList = FE5F977F1966F39A005A3DE4 /* Build configuration list for PBXProject "eventosEuskadi" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FE5F977B1966F39A005A3DE4;
+			productRefGroup = FE5F97851966F39A005A3DE4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FE5F97831966F39A005A3DE4 /* eventosEuskadi */,
+				FE5F97AC1966F39A005A3DE4 /* eventosEuskadiTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FE5F97821966F39A005A3DE4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FE5F97A81966F39A005A3DE4 /* Images.xcassets in Resources */,
+				FE5F97941966F39A005A3DE4 /* InfoPlist.strings in Resources */,
+				FE5F979D1966F39A005A3DE4 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FE5F97AB1966F39A005A3DE4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FE5F97BA1966F39A005A3DE4 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FE5F97801966F39A005A3DE4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FE5F97A61966F39A005A3DE4 /* DetailViewController.m in Sources */,
+				FE5F97A31966F39A005A3DE4 /* MasterViewController.m in Sources */,
+				FE5F979A1966F39A005A3DE4 /* AppDelegate.m in Sources */,
+				FE5F97961966F39A005A3DE4 /* main.m in Sources */,
+				FE5F97A01966F39A005A3DE4 /* eventosEuskadi.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FE5F97A91966F39A005A3DE4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FE5F97BC1966F39A005A3DE4 /* eventosEuskadiTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FE5F97B41966F39A005A3DE4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FE5F97831966F39A005A3DE4 /* eventosEuskadi */;
+			targetProxy = FE5F97B31966F39A005A3DE4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FE5F97921966F39A005A3DE4 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FE5F97931966F39A005A3DE4 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		FE5F979B1966F39A005A3DE4 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FE5F979C1966F39A005A3DE4 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FE5F97B81966F39A005A3DE4 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FE5F97B91966F39A005A3DE4 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FE5F97BD1966F39A005A3DE4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		FE5F97BE1966F39A005A3DE4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FE5F97C01966F39A005A3DE4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "eventosEuskadi/eventosEuskadi-Prefix.pch";
+				INFOPLIST_FILE = "eventosEuskadi/eventosEuskadi-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		FE5F97C11966F39A005A3DE4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "eventosEuskadi/eventosEuskadi-Prefix.pch";
+				INFOPLIST_FILE = "eventosEuskadi/eventosEuskadi-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		FE5F97C31966F39A005A3DE4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/eventosEuskadi.app/eventosEuskadi";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "eventosEuskadi/eventosEuskadi-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "eventosEuskadiTests/eventosEuskadiTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		FE5F97C41966F39A005A3DE4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/eventosEuskadi.app/eventosEuskadi";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "eventosEuskadi/eventosEuskadi-Prefix.pch";
+				INFOPLIST_FILE = "eventosEuskadiTests/eventosEuskadiTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FE5F977F1966F39A005A3DE4 /* Build configuration list for PBXProject "eventosEuskadi" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FE5F97BD1966F39A005A3DE4 /* Debug */,
+				FE5F97BE1966F39A005A3DE4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FE5F97BF1966F39A005A3DE4 /* Build configuration list for PBXNativeTarget "eventosEuskadi" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FE5F97C01966F39A005A3DE4 /* Debug */,
+				FE5F97C11966F39A005A3DE4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		FE5F97C21966F39A005A3DE4 /* Build configuration list for PBXNativeTarget "eventosEuskadiTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FE5F97C31966F39A005A3DE4 /* Debug */,
+				FE5F97C41966F39A005A3DE4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		FE5F979E1966F39A005A3DE4 /* eventosEuskadi.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				FE5F979F1966F39A005A3DE4 /* eventosEuskadi.xcdatamodel */,
+			);
+			currentVersion = FE5F979F1966F39A005A3DE4 /* eventosEuskadi.xcdatamodel */;
+			path = eventosEuskadi.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = FE5F977C1966F39A005A3DE4 /* Project object */;
+}

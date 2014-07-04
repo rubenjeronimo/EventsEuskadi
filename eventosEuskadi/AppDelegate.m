@@ -8,7 +8,7 @@
 
 #import "AppDelegate.h"
 
-#import "MasterViewController.h"
+#import "EventosTableViewController.h"
 
 @implementation AppDelegate
 
@@ -20,8 +20,8 @@
 {
     // Override point for customization after application launch.
     UINavigationController *navigationController = (UINavigationController *)self.window.rootViewController;
-    MasterViewController *controller = (MasterViewController *)navigationController.topViewController;
-    controller.managedObjectContext = self.managedObjectContext;
+    EventosTableViewController *controller = (EventosTableViewController *)navigationController.topViewController;
+//    controller.managedObjectContext = self.managedObjectContext;
     return YES;
 }
 							

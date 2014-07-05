@@ -26,7 +26,11 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    self.title = self.tituloString;
+    self.tituloLabel.text = self.tituloString;
+    self.tipoLabel.text = self.tipoString;
+    self.urlLabel.text = self.urlString;
+
 }
 
 - (void)didReceiveMemoryWarning

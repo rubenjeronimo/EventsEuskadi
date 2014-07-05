@@ -7,10 +7,10 @@
 //
 
 #import "EventosTableViewController.h"
-
+#import "EventosDetalleViewController.h"
 @interface EventosTableViewController ()
 @property (nonatomic,strong) NSArray *listaEventos;
-@property (nonatomic,strong) NSDictionary *eventos;
+@property (nonatomic,strong) NSDictionary *evento;
 @end
 
 @implementation EventosTableViewController
@@ -36,8 +36,8 @@
     operacion.responseSerializer = [AFJSONResponseSerializer serializer];
     [operacion setCompletionBlockWithSuccess:^(AFHTTPRequestOperation *operation, id responseObject) {
         self.title = @"Eventos Euskadi";
-        self.eventos = (NSDictionary *)responseObject;
-        self.listaEventos = [self.eventos valueForKey:@"eventos"];
+        self.evento = (NSDictionary *)responseObject;
+        self.listaEventos = [self.evento valueForKey:@"eventos"];
         [self.tableView reloadData];
       //  NSLog(@"array:%@",self.listaEventos);
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
@@ -75,9 +75,9 @@
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier forIndexPath:indexPath];
     
     // Configure the cell...
-    self.eventos = [self.listaEventos objectAtIndex:indexPath.row];
-    cell.textLabel.text = [self.eventos objectForKey:@"evento_titulo"];
-    cell.detailTextLabel.text = [self.eventos objectForKey:@"evento_tipo"];
+    self.evento = [self.listaEventos objectAtIndex:indexPath.row];
+    cell.textLabel.text = [self.evento objectForKey:@"evento_titulo"];
+    cell.detailTextLabel.text = [self.evento objectForKey:@"evento_tipo"];
     
     
     return cell;
@@ -130,9 +130,20 @@
 // In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+    if ([segue.identifier  isEqualToString: @"segueDetalle"]) {
+        NSIndexPath *indexPath = [self.tableView indexPathForCell:sender];
+        EventosDetalleViewController *eventosVC = [segue destinationViewController];
+        NSDictionary *proyecto = [self.listaEventos objectAtIndex:indexPath.row];
+        NSString *tituloVC = [proyecto objectForKey:@"evento_titulo"];
+        NSString *detalleVC = [proyecto objectForKey:@"evento_tipo"];
+        NSString *latitudVC = [proyecto objectForKey:@"latitude"];
+        NSString *longitudVC = [proyecto objectForKey:@"longitude"];
+        NSString *urlVC = [proyecto objectForKey:@"evento_url"];
+        eventosVC.tituloString = tituloVC;
+        eventosVC.tipoString = detalleVC;
+        eventosVC.urlString = urlVC;
+        eventosVC.latString = latitudVC;
+        eventosVC.lonString = longitudVC;
+    }
 }
-
-
 @end

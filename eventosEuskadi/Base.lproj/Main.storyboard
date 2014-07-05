@@ -94,11 +94,23 @@
                                 <color key="textColor" red="0.23100823179999999" green="0.52840453710000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OVl-Pt-4j5">
+                                <rect key="frame" x="20" y="165" width="280" height="284"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="dye-vm-U6j">
+                                        <rect key="frame" x="0.0" y="0.0" width="280" height="284"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    </mapView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="VyE-fu-GEL"/>
                     <connections>
+                        <outlet property="mapView" destination="dye-vm-U6j" id="LmG-lf-pVG"/>
                         <outlet property="tipoLabel" destination="gRp-8y-qFn" id="NRu-M4-DHZ"/>
                         <outlet property="urlLabel" destination="MUF-db-4et" id="miV-ts-zdt"/>
                     </connections>

@@ -42,6 +42,7 @@
 		FE5F98011966F4E9005A3DE4 /* UIProgressView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = FE5F97EE1966F4E9005A3DE4 /* UIProgressView+AFNetworking.m */; };
 		FE5F98021966F4E9005A3DE4 /* UIRefreshControl+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = FE5F97F01966F4E9005A3DE4 /* UIRefreshControl+AFNetworking.m */; };
 		FE5F98031966F4E9005A3DE4 /* UIWebView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = FE5F97F21966F4E9005A3DE4 /* UIWebView+AFNetworking.m */; };
+		FEFE7F791967F5890083A4FF /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEFE7F781967F5890083A4FF /* MapKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -114,6 +115,7 @@
 		FE5F97F01966F4E9005A3DE4 /* UIRefreshControl+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIRefreshControl+AFNetworking.m"; sourceTree = "<group>"; };
 		FE5F97F11966F4E9005A3DE4 /* UIWebView+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIWebView+AFNetworking.h"; sourceTree = "<group>"; };
 		FE5F97F21966F4E9005A3DE4 /* UIWebView+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIWebView+AFNetworking.m"; sourceTree = "<group>"; };
+		FEFE7F781967F5890083A4FF /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +123,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FEFE7F791967F5890083A4FF /* MapKit.framework in Frameworks */,
 				FE5F978A1966F39A005A3DE4 /* CoreGraphics.framework in Frameworks */,
 				FE5F978E1966F39A005A3DE4 /* CoreData.framework in Frameworks */,
 				FE5F978C1966F39A005A3DE4 /* UIKit.framework in Frameworks */,
@@ -164,6 +167,7 @@
 		FE5F97861966F39A005A3DE4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				FEFE7F781967F5890083A4FF /* MapKit.framework */,
 				FE5F97871966F39A005A3DE4 /* Foundation.framework */,
 				FE5F97891966F39A005A3DE4 /* CoreGraphics.framework */,
 				FE5F978B1966F39A005A3DE4 /* UIKit.framework */,
@@ -610,6 +614,7 @@
 				FE5F97C11966F39A005A3DE4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FE5F97C21966F39A005A3DE4 /* Build configuration list for PBXNativeTarget "eventosEuskadiTests" */ = {
 			isa = XCConfigurationList;
@@ -618,6 +623,7 @@
 				FE5F97C41966F39A005A3DE4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

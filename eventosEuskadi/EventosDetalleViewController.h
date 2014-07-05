@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import <MapKit/MapKit.h>
 @interface EventosDetalleViewController : UIViewController
 @property (weak, nonatomic) IBOutlet UILabel *tituloLabel;
 @property (weak, nonatomic) IBOutlet UILabel *tipoLabel;

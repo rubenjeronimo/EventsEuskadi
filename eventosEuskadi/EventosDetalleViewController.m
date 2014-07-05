@@ -9,6 +9,7 @@
 #import "EventosDetalleViewController.h"
 
 @interface EventosDetalleViewController ()
+@property (weak, nonatomic) IBOutlet MKMapView *mapView;
 
 @end
 
@@ -30,7 +31,24 @@
     self.tituloLabel.text = self.tituloString;
     self.tipoLabel.text = self.tipoString;
     self.urlLabel.text = self.urlString;
+   
+    [self mapea];
+}
 
+-(void)mapea{
+    
+    MKCoordinateRegion region;
+    MKCoordinateSpan span;
+    span.latitudeDelta=0.1;
+    span.longitudeDelta=0.1;
+    CLLocationCoordinate2D location;
+    location.latitude = [self.latString doubleValue];
+    location.longitude = [self.lonString doubleValue];
+    region.span = span;
+    region.center = location;
+    [self.mapView setRegion:region animated:YES];
+    [self.mapView  regionThatFits:region];
+    
 }
 
 - (void)didReceiveMemoryWarning

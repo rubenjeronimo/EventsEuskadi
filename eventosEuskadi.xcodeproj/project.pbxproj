@@ -42,6 +42,7 @@
 		FE5F98011966F4E9005A3DE4 /* UIProgressView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = FE5F97EE1966F4E9005A3DE4 /* UIProgressView+AFNetworking.m */; };
 		FE5F98021966F4E9005A3DE4 /* UIRefreshControl+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = FE5F97F01966F4E9005A3DE4 /* UIRefreshControl+AFNetworking.m */; };
 		FE5F98031966F4E9005A3DE4 /* UIWebView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = FE5F97F21966F4E9005A3DE4 /* UIWebView+AFNetworking.m */; };
+		FEF5FAEA19681495008BF161 /* EventoTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FEF5FAE919681495008BF161 /* EventoTableViewCell.m */; };
 		FEFE7F791967F5890083A4FF /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEFE7F781967F5890083A4FF /* MapKit.framework */; };
 /* End PBXBuildFile section */
 
@@ -115,6 +116,8 @@
 		FE5F97F01966F4E9005A3DE4 /* UIRefreshControl+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIRefreshControl+AFNetworking.m"; sourceTree = "<group>"; };
 		FE5F97F11966F4E9005A3DE4 /* UIWebView+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIWebView+AFNetworking.h"; sourceTree = "<group>"; };
 		FE5F97F21966F4E9005A3DE4 /* UIWebView+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIWebView+AFNetworking.m"; sourceTree = "<group>"; };
+		FEF5FAE819681495008BF161 /* EventoTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventoTableViewCell.h; sourceTree = "<group>"; };
+		FEF5FAE919681495008BF161 /* EventoTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventoTableViewCell.m; sourceTree = "<group>"; };
 		FEFE7F781967F5890083A4FF /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -230,6 +233,8 @@
 				FE5F97C61966F3B8005A3DE4 /* EventosTableViewController.m */,
 				FE5F97C81966F3CD005A3DE4 /* EventosDetalleViewController.h */,
 				FE5F97C91966F3CD005A3DE4 /* EventosDetalleViewController.m */,
+				FEF5FAE819681495008BF161 /* EventoTableViewCell.h */,
+				FEF5FAE919681495008BF161 /* EventoTableViewCell.m */,
 			);
 			name = view;
 			sourceTree = "<group>";
@@ -397,6 +402,7 @@
 				FE5F97F91966F4E9005A3DE4 /* AFURLRequestSerialization.m in Sources */,
 				FE5F979A1966F39A005A3DE4 /* AppDelegate.m in Sources */,
 				FE5F98021966F4E9005A3DE4 /* UIRefreshControl+AFNetworking.m in Sources */,
+				FEF5FAEA19681495008BF161 /* EventoTableViewCell.m in Sources */,
 				FE5F97FA1966F4E9005A3DE4 /* AFURLResponseSerialization.m in Sources */,
 				FE5F97961966F39A005A3DE4 /* main.m in Sources */,
 				FE5F98001966F4E9005A3DE4 /* UIImageView+AFNetworking.m in Sources */,

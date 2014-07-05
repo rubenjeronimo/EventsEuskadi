@@ -8,6 +8,7 @@
 
 #import "EventosTableViewController.h"
 #import "EventosDetalleViewController.h"
+#import "EventoTableViewCell.h"
 @interface EventosTableViewController ()
 @property (nonatomic,strong) NSArray *listaEventos;
 @property (nonatomic,strong) NSDictionary *evento;
@@ -72,12 +73,14 @@
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     static NSString *cellIdentifier = @"CeldaEvento";
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier forIndexPath:indexPath];
+    EventoTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier forIndexPath:indexPath];
     
     // Configure the cell...
     self.evento = [self.listaEventos objectAtIndex:indexPath.row];
-    cell.textLabel.text = [self.evento objectForKey:@"evento_titulo"];
-    cell.detailTextLabel.text = [self.evento objectForKey:@"evento_tipo"];
+    cell.tituloEventoLabel.text = [self.evento objectForKey:@"evento_titulo"];
+    cell.tipoEventoLabel.text = [self.evento objectForKey:@"evento_tipo"];
+//    cell.textLabel.text = [self.evento objectForKey:@"evento_titulo"];
+//    cell.detailTextLabel.text = [self.evento objectForKey:@"evento_tipo"];
     
     
     return cell;

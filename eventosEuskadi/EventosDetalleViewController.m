@@ -25,10 +25,8 @@
     return self;
 }
 
-- (void)viewDidLoad
-{
-    [super viewDidLoad];
-    self.title = self.tituloString;
+-(void)viewWillAppear:(BOOL)animated{
+        self.title = self.tituloString;
     self.tituloLabel.text = self.tituloString;
     self.tipoLabel.text = self.tipoString;
     self.urlLabel.text = self.urlString;
@@ -38,6 +36,12 @@
     
     [self mapea];
     [self POI];
+}
+
+- (void)viewDidLoad
+{
+    [super viewDidLoad];
+
 }
 
 -(void)mapea{

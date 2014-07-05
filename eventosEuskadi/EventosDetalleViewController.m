@@ -10,7 +10,8 @@
 
 @interface EventosDetalleViewController ()
 @property (weak, nonatomic) IBOutlet MKMapView *mapView;
-
+@property  double latitudPOI;
+@property double longitudPOI;
 @end
 
 @implementation EventosDetalleViewController
@@ -32,7 +33,11 @@
     self.tipoLabel.text = self.tipoString;
     self.urlLabel.text = self.urlString;
    
+    self.latitudPOI = [self.latString doubleValue];
+    self.longitudPOI = [self.lonString doubleValue];
+    
     [self mapea];
+    [self POI];
 }
 
 -(void)mapea{
@@ -42,13 +47,22 @@
     span.latitudeDelta=0.1;
     span.longitudeDelta=0.1;
     CLLocationCoordinate2D location;
-    location.latitude = [self.latString doubleValue];
-    location.longitude = [self.lonString doubleValue];
+    location.latitude = self.latitudPOI;
+    location.longitude = self.longitudPOI;
     region.span = span;
     region.center = location;
     [self.mapView setRegion:region animated:YES];
     [self.mapView  regionThatFits:region];
     
+}
+
+-(void)POI{
+    CLLocationCoordinate2D coorPunto = CLLocationCoordinate2DMake(self.latitudPOI, self.longitudPOI);
+    MKPointAnnotation *anotacion = [[MKPointAnnotation alloc]init];
+    [anotacion setCoordinate:coorPunto];
+    [anotacion setTitle:self.tituloString];
+    [anotacion setSubtitle:self.tipoString];
+    [self.mapView addAnnotation:anotacion];
 }
 
 - (void)didReceiveMemoryWarning
@@ -68,4 +82,27 @@
 }
 */
 
+- (IBAction)tipoMapa:(id)sender {
+
+    UIButton *botonMapa = (UIButton*)sender;
+    switch (botonMapa.tag) {
+        case 0:
+            [self.mapView setMapType:MKMapTypeStandard];
+            [botonMapa setTitle:@"Mapa" forState:UIControlStateNormal];
+            botonMapa.tag =1;
+            break;
+        case 1:
+            [self.mapView setMapType:MKMapTypeSatellite];
+            [botonMapa setTitle:@"Satelite" forState:UIControlStateNormal];
+            botonMapa.tag = 2;
+            break;
+        case 2:
+            [self.mapView setMapType:MKMapTypeHybrid];
+            [botonMapa setTitle:@"Hibrido" forState:UIControlStateNormal];
+            botonMapa.tag = 0;
+            break;
+        default:
+            break;
+    }
+}
 @end

@@ -19,4 +19,5 @@
 @property (strong,nonatomic) NSString *latString;
 @property (strong,nonatomic) NSString *lonString;
 
+- (IBAction)tipoMapa:(id)sender;
 @end

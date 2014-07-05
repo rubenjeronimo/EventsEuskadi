@@ -49,6 +49,7 @@
                                         </label>
                                     </subviews>
                                 </tableViewCellContentView>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <connections>
                                     <outlet property="tipoEventoLabel" destination="Z9o-EY-dEJ" id="oJ9-ur-fkO"/>
                                     <outlet property="tituloEventoLabel" destination="jFt-rp-in7" id="sGn-oe-c24"/>

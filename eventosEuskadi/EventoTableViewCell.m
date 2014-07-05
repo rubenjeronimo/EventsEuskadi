@@ -21,7 +21,16 @@
 
 - (void)awakeFromNib
 {
-    // Initialization code
+    [self backgroundLayer];
+    
+}
+
+-(void) backgroundLayer{
+    CALayer *capa = [CALayer layer];
+    capa.frame = CGRectInset(self.layer.frame, 5, 5);
+    capa.backgroundColor = [UIColor colorWithRed:0.1 green:0.2 blue:0.1 alpha:0.7].CGColor;
+    capa.cornerRadius = 20;
+    [self.layer insertSublayer:capa atIndex:0];
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated

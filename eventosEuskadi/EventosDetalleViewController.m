@@ -29,7 +29,7 @@
         self.title = self.tituloString;
     self.tituloLabel.text = self.tituloString;
     self.tipoLabel.text = self.tipoString;
-    self.urlLabel.text = self.urlString;
+   // self.urlBoton.titleLabel.text = self.urlString;
    
     self.latitudPOI = [self.latString doubleValue];
     self.longitudPOI = [self.lonString doubleValue];
@@ -48,8 +48,8 @@
     
     MKCoordinateRegion region;
     MKCoordinateSpan span;
-    span.latitudeDelta=0.1;
-    span.longitudeDelta=0.1;
+    span.latitudeDelta=0.005;
+    span.longitudeDelta=0.005;
     CLLocationCoordinate2D location;
     location.latitude = self.latitudPOI;
     location.longitude = self.longitudPOI;
@@ -108,5 +108,10 @@
         default:
             break;
     }
+}
+
+- (IBAction)urlStart:(id)sender {
+   // NSURL *url = [NSURL URLWithString:self.urlString];
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:self.urlString]];
 }
 @end

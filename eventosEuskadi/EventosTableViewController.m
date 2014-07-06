@@ -25,6 +25,10 @@
     return self;
 }
 
+-(void)viewWillAppear:(BOOL)animated{
+    usleep(1000000);
+}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
